@@ -432,47 +432,62 @@ font-size:28px;
 ========================= */
 
 .artefak-box{
-background:#ffffff;
+background:#0f172a;
+
 padding:30px;
+
 border-radius:20px;
+
 margin-bottom:35px;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
+
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+
+border:1px solid rgba(255,255,255,0.08);
 }
 
 .artefak-title{
 font-size:30px;
 margin-bottom:20px;
-color:#4338ca;
+
+color:#818cf8;
+
 font-weight:700;
 }
 
 .artefak-box p{
 line-height:1.8;
-color:#374151;
+
+color:#e5e7eb;
+
 margin-bottom:15px;
 }
 
 /* KELEBIHAN */
 .point-box{
-background:#e0e7ff;
+background:#1e3a8a;
+
 padding:22px;
+
 border-radius:18px;
+
 margin-top:20px;
 }
 
 .point-box h4{
-color:#312e81;
+color:#ffffff;
+
 font-size:22px;
+
 margin-bottom:15px;
 }
 
 /* KEKURANGAN */
 .point-box.kurang{
-background:#dbeafe;
+background:#1e40af;
 }
 
 .point-box.kurang h4{
-color:#1e3a8a;
+color:#ffffff;
 }
 
 .point-box ul{
@@ -481,32 +496,46 @@ padding-left:22px;
 
 .point-box li{
 margin-bottom:12px;
+
 line-height:1.8;
-color:#1f2937;
+
+color:#f8fafc;
+
 font-size:16px;
 }
 
 /* BUTTON */
 .btn-drive{
 display:inline-block;
+
 margin-top:25px;
 }
 
 .btn-drive button{
 padding:13px 24px;
+
 border:none;
+
 border-radius:14px;
-background:#4338ca;
+
+background:#6366f1;
+
 color:#ffffff;
+
 font-weight:700;
+
 font-size:15px;
+
 cursor:pointer;
+
 transition:0.3s;
-box-shadow:0 4px 10px rgba(67,56,202,0.3);
+
+box-shadow:0 4px 10px rgba(99,102,241,0.4);
 }
 
 .btn-drive button:hover{
-background:#312e81;
+background:#4f46e5;
+
 transform:translateY(-3px);
 }
 /* =========================
