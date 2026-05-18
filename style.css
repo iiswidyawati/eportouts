@@ -427,3 +427,86 @@ font-size:28px;
 }
 
 }
+/* =========================
+   ARTEFAK RPM
+========================= */
+
+.artefak-box{
+background:#fff;
+padding:25px;
+border-radius:20px;
+margin-bottom:30px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.artefak-title{
+font-size:24px;
+margin-bottom:15px;
+color:#4338ca;
+}
+
+.point-box{
+background:#eef2ff;
+padding:18px;
+border-radius:15px;
+margin-top:20px;
+}
+
+.point-box.kurang{
+background:#fef2f2;
+}
+
+.point-box h4{
+margin-bottom:10px;
+font-size:18px;
+}
+
+.point-box ul{
+padding-left:20px;
+}
+
+.point-box li{
+margin-bottom:10px;
+line-height:1.7;
+}
+
+.btn-drive{
+display:inline-block;
+margin-top:20px;
+}
+
+.btn-drive button{
+padding:12px 22px;
+border:none;
+border-radius:12px;
+background:#4338ca;
+color:#fff;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn-drive button:hover{
+transform:translateY(-3px);
+}
+/* =========================
+   FOTO PPL TENGAH
+========================= */
+
+.hero-image{
+display:flex;
+justify-content:center;
+align-items:center;
+
+margin-bottom:25px;
+}
+
+.hero-image img{
+width:100%;
+max-width:550px;
+
+border-radius:20px;
+
+display:block;
+object-fit:cover;
+}
