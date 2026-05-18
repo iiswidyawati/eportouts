@@ -14,8 +14,8 @@ scroll-behavior:smooth;
 ========================= */
 body{
 background:
-linear-gradient(135deg,#dbeafe,#f8fafc);
-color:#1e293b;
+linear-gradient(135deg,#0f172a,#1e293b,#334155);
+color:white;
 overflow-x:hidden;
 }
 
@@ -31,22 +31,25 @@ padding:15px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(255,255,255,0.75);
-backdrop-filter:blur(12px);
+background:rgba(15,23,42,0.7);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(255,255,255,0.1);
 z-index:1000;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
 }
 
+/* LOGO */
 .logo-home{
 text-decoration:none;
 font-size:30px;
 font-weight:700;
-color:#1e293b;
+color:white;
 transition:0.3s;
 }
 
 .logo-home:hover{
-color:#2563eb;
+color:#60a5fa;
 }
 
 /* =========================
@@ -60,19 +63,21 @@ gap:10px;
 
 .menu a{
 text-decoration:none;
-padding:10px 18px;
-border-radius:14px;
-background:white;
-color:#1e293b;
-font-weight:500;
+padding:12px 20px;
+border-radius:50px;
+background:rgba(255,255,255,0.08);
+color:white;
+font-weight:600;
 transition:0.3s;
+border:1px solid rgba(255,255,255,0.08);
 }
 
 .menu a:hover,
 .menu a.active{
-background:#2563eb;
+background:#3b82f6;
 color:white;
-transform:translateY(-2px);
+transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(59,130,246,0.35);
 }
 
 /* =========================
@@ -81,7 +86,7 @@ transform:translateY(-2px);
 .hero{
 height:100vh;
 background:
-linear-gradient(rgba(255,255,255,0.35),rgba(255,255,255,0.35)),
+linear-gradient(rgba(15,23,42,0.55),rgba(15,23,42,0.55)),
 url('img/hero.png') center/cover no-repeat;
 display:flex;
 justify-content:center;
@@ -91,22 +96,24 @@ padding:20px;
 }
 
 .hero-content{
-background:rgba(255,255,255,0.55);
+background:rgba(15,23,42,0.6);
 padding:50px;
 border-radius:30px;
-backdrop-filter:blur(10px);
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
 }
 
 .hero-content h1{
 font-size:64px;
 margin-bottom:15px;
-color:#1e3a8a;
+color:white;
+text-shadow:0 0 25px rgba(59,130,246,0.8);
 }
 
 .hero-content p{
 font-size:20px;
-color:#334155;
+color:#cbd5e1;
 }
 
 /* =========================
@@ -116,17 +123,11 @@ section{
 max-width:1200px;
 margin:120px auto 50px;
 padding:50px;
-background:rgba(255,255,255,0.75);
-backdrop-filter:blur(10px);
+background:rgba(15,23,42,0.75);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
 border-radius:35px;
-box-shadow:0 10px 30px rgba(0,0,0,0.06);
-}
-
-/* =========================
-   CARD
-========================= */
-.card{
-width:100%;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
 /* =========================
@@ -135,7 +136,7 @@ width:100%;
 .page-title{
 font-size:46px;
 margin-bottom:20px;
-color:#1e3a8a;
+color:white;
 font-weight:700;
 }
 
@@ -144,7 +145,7 @@ font-size:18px;
 line-height:1.9;
 text-align:justify;
 margin-bottom:40px;
-color:#475569;
+color:#cbd5e1;
 }
 
 /* =========================
@@ -154,7 +155,8 @@ color:#475569;
 .inspirasi-layout,
 .lptk-container,
 .ppl-layout,
-.keunikan-item{
+.keunikan-item,
+.artefak-item{
 display:flex;
 align-items:center;
 justify-content:flex-start;
@@ -163,44 +165,42 @@ margin-top:35px;
 }
 
 /* =========================
-   IMAGE CONTAINER
+   IMAGE
 ========================= */
 .profil-img,
 .inspirasi-foto,
 .lptk-image,
 .ppl-image,
-.keunikan-image{
+.keunikan-image,
+.artefak-image{
 flex:0 0 320px;
 }
 
-/* =========================
-   ALL IMAGES
-========================= */
 .profil-img img,
 .inspirasi-foto img,
 .lptk-image img,
 .ppl-image img,
-.keunikan-image img{
+.keunikan-image img,
+.artefak-image img{
 width:320px;
 height:220px;
 object-fit:cover;
 border-radius:28px;
 display:block;
-box-shadow:0 10px 30px rgba(0,0,0,0.12);
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
 transition:0.4s;
 }
 
-/* FOTO PROFIL */
 .profil-img img{
 height:420px;
 }
 
-/* HOVER IMAGE */
 .profil-img img:hover,
 .inspirasi-foto img:hover,
 .lptk-image img:hover,
 .ppl-image img:hover,
-.keunikan-image img:hover{
+.keunikan-image img:hover,
+.artefak-image img:hover{
 transform:scale(1.03);
 }
 
@@ -211,7 +211,8 @@ transform:scale(1.03);
 .inspirasi-text,
 .lptk-content,
 .ppl-content,
-.keunikan-content{
+.keunikan-content,
+.artefak-content{
 flex:1;
 }
 
@@ -221,22 +222,24 @@ flex:1;
 .profil-text h2,
 .inspirasi-text h2,
 .lptk-content h2,
-.ppl-content h2{
+.ppl-content h2,
+.artefak-content h3{
 font-size:40px;
 margin-bottom:15px;
-color:#2563eb;
+color:#60a5fa;
 }
 
 .keunikan-content h3{
 font-size:32px;
 margin-bottom:15px;
-color:#2563eb;
+color:#60a5fa;
 }
 
 .profil-text h3,
 .ppl-content h3{
 font-size:28px;
 margin-bottom:20px;
+color:white;
 }
 
 /* =========================
@@ -246,38 +249,43 @@ margin-bottom:20px;
 .inspirasi-text p,
 .lptk-content p,
 .ppl-content p,
-.keunikan-content p{
+.keunikan-content p,
+.artefak-content p{
 font-size:17px;
 line-height:2;
 text-align:justify;
 margin-bottom:18px;
-color:#475569;
+color:#cbd5e1;
 }
 
 /* =========================
    CARD ITEM
 ========================= */
-.keunikan-item{
+.keunikan-item,
+.artefak-item{
 padding:30px;
-background:white;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.08);
 border-radius:30px;
-box-shadow:0 10px 30px rgba(0,0,0,0.06);
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
 transition:0.4s;
 }
 
-.keunikan-item:hover{
+.keunikan-item:hover,
+.artefak-item:hover{
 transform:translateY(-6px);
-box-shadow:0 20px 40px rgba(37,99,235,0.12);
+box-shadow:0 20px 40px rgba(59,130,246,0.2);
 }
 
 /* =========================
    BUTTON
 ========================= */
-.btn-profil{
+.btn-profil,
+.btn-drive button{
 padding:14px 30px;
 border:none;
 border-radius:40px;
-background:#2563eb;
+background:#3b82f6;
 color:white;
 font-size:16px;
 font-weight:600;
@@ -285,9 +293,15 @@ cursor:pointer;
 transition:0.3s;
 }
 
-.btn-profil:hover{
-background:#1d4ed8;
+.btn-profil:hover,
+.btn-drive button:hover{
+background:#2563eb;
 transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(59,130,246,0.35);
+}
+
+.btn-drive{
+text-decoration:none;
 }
 
 /* =========================
@@ -297,7 +311,7 @@ transform:translateY(-3px);
 margin-top:25px;
 overflow:hidden;
 border-radius:25px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
 .maps-box iframe{
@@ -313,9 +327,30 @@ footer{
 margin-top:60px;
 padding:30px;
 text-align:center;
-background:white;
+background:rgba(15,23,42,0.9);
 font-size:15px;
-color:#64748b;
+color:#94a3b8;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+section,
+.card,
+.keunikan-item,
+.artefak-item{
+animation:fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
 /* =========================
@@ -323,7 +358,6 @@ color:#64748b;
 ========================= */
 @media(max-width:900px){
 
-/* NAVBAR */
 .navbar{
 padding:15px 20px;
 flex-direction:column;
@@ -334,7 +368,6 @@ gap:15px;
 justify-content:center;
 }
 
-/* HERO */
 .hero-content h1{
 font-size:42px;
 }
@@ -343,47 +376,44 @@ font-size:42px;
 font-size:18px;
 }
 
-/* SECTION */
 section{
 padding:30px 20px;
 margin-top:140px;
 }
 
-/* LAYOUT */
 .profil-box,
 .inspirasi-layout,
 .lptk-container,
 .ppl-layout,
-.keunikan-item{
+.keunikan-item,
+.artefak-item{
 flex-direction:column;
 }
 
-/* IMAGE */
 .profil-img,
 .inspirasi-foto,
 .lptk-image,
 .ppl-image,
-.keunikan-image{
+.keunikan-image,
+.artefak-image{
 width:100%;
 flex:none;
 }
 
-/* RESPONSIVE IMAGE */
 .profil-img img,
 .inspirasi-foto img,
 .lptk-image img,
 .ppl-image img,
-.keunikan-image img{
+.keunikan-image img,
+.artefak-image img{
 width:100%;
 height:auto;
 }
 
-/* TITLE */
 .page-title{
 font-size:34px;
 }
 
-/* HEADING */
 .profil-text h2,
 .inspirasi-text h2,
 .lptk-content h2,
@@ -391,153 +421,9 @@ font-size:34px;
 font-size:30px;
 }
 
-.keunikan-content h3{
-font-size:28px;
-}
-
-}
-/* =========================
-   ARTEFAK
-========================= */
-
-.artefak-item{
-display:flex;
-align-items:center;
-gap:40px;
-padding:30px;
-margin-top:35px;
-background:white;
-border-radius:30px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-transition:0.4s;
-}
-
-/* HOVER */
-.artefak-item:hover{
-transform:translateY(-6px);
-box-shadow:0 20px 40px rgba(37,99,235,0.15);
-}
-
-/* FOTO */
-.artefak-image{
-flex:0 0 320px;
-}
-
-.artefak-image img{
-width:320px;
-height:220px;
-object-fit:cover;
-border-radius:25px;
-display:block;
-box-shadow:0 10px 25px rgba(0,0,0,0.12);
-transition:0.4s;
-}
-
-.artefak-item:hover img{
-transform:scale(1.03);
-}
-
-/* TEKS */
-.artefak-content{
-flex:1;
-}
-
-.artefak-content h3{
-font-size:32px;
-margin-bottom:18px;
-color:#2563eb;
-}
-
-.artefak-content p{
-font-size:17px;
-line-height:1.9;
-text-align:justify;
-margin-bottom:20px;
-color:#475569;
-}
-
-/* BUTTON */
-.btn-drive{
-text-decoration:none;
-}
-
-.btn-drive button{
-padding:14px 28px;
-border:none;
-border-radius:40px;
-background:#2563eb;
-color:white;
-font-size:16px;
-font-weight:600;
-cursor:pointer;
-transition:0.3s;
-}
-
-.btn-drive button:hover{
-background:#1d4ed8;
-transform:translateY(-3px);
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-
-.artefak-item{
-flex-direction:column;
-}
-
-.artefak-image{
-width:100%;
-flex:none;
-}
-
-.artefak-image img{
-width:100%;
-height:auto;
-}
-
+.keunikan-content h3,
 .artefak-content h3{
 font-size:28px;
-}
-
-}
-/* FOTO INSPIRASI */
-.inspirasi-foto{
-flex:0 0 320px;
-display:flex;
-justify-content:center;
-align-items:flex-start;
-}
-
-/* GAMBAR */
-.inspirasi-foto img{
-width:320px;
-height:auto;
-max-height:420px;
-object-fit:contain;
-background:white;
-padding:10px;
-border-radius:30px;
-display:block;
-box-shadow:0 10px 30px rgba(0,0,0,0.12);
-transition:0.4s;
-}
-
-/* HOVER */
-.inspirasi-foto img:hover{
-transform:scale(1.02);
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-
-.inspirasi-foto{
-width:100%;
-flex:none;
-}
-
-.inspirasi-foto img{
-width:100%;
-height:auto;
 }
 
 }
