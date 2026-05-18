@@ -1,4 +1,4 @@
-const text = "DEWI NUR OVILIA";
+const text = "IIS WIDYAWATI";
 
 let i = 0;
 
