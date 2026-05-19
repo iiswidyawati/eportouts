@@ -591,3 +591,112 @@ box-shadow:0 4px 15px rgba(0,0,0,0.15);
 flex:2;
 min-width:300px;
 }
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media(max-width:768px){
+
+/* CARD */
+.card{
+padding:20px;
+margin:15px;
+}
+
+/* JUDUL */
+.page-title{
+font-size:28px;
+text-align:center;
+}
+
+.page-desc{
+font-size:15px;
+text-align:center;
+line-height:1.7;
+}
+
+/* NAVBAR */
+.navbar{
+padding:15px;
+flex-direction:column;
+gap:15px;
+}
+
+/* MENU */
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
+
+.menu a{
+font-size:14px;
+padding:8px 10px;
+}
+
+/* BOX ARTEFAK */
+.artefak-box{
+padding:20px;
+border-radius:18px;
+}
+
+/* JUDUL SIKLUS */
+.artefak-title{
+font-size:22px;
+line-height:1.5;
+}
+
+/* ISI */
+.artefak-box p{
+font-size:15px;
+line-height:1.8;
+}
+
+/* POINT BOX */
+.point-box{
+padding:18px;
+}
+
+.point-box h4{
+font-size:18px;
+}
+
+.point-box li{
+font-size:14px;
+line-height:1.7;
+}
+
+/* BUTTON */
+.btn-drive{
+width:100%;
+}
+
+.btn-drive button{
+width:100%;
+font-size:14px;
+padding:14px;
+}
+
+/* FOTO */
+.hero-image img{
+max-width:100%;
+border-radius:18px;
+}
+
+/* GURU */
+.guru-layout{
+flex-direction:column;
+}
+
+.guru-image img{
+max-width:100%;
+}
+
+/* MAPS */
+.maps-box iframe{
+height:250px;
+border-radius:18px;
+}
+
+}
